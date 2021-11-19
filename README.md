@@ -58,3 +58,31 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 * Historie von TeX und LaTeX
 * Vorstellung von DANTE e.V.
 * Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument
+* Gliederung von Dokumenten
+* Label und Referenzen
+
+### Tag 2 - Mathematik
+
+*
+*
+*
+
+### Tag 3 - Bibliografien
+
+*
+*
+*
+
+
+### Tag 4 - Q&A, Folien, Briefe und Lebensläufe
+
+
+*
+*
+*
+
+
+
+
+
+
