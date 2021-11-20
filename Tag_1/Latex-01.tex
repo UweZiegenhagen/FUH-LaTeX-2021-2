@@ -3,6 +3,7 @@
 \usepackage{babel}
 \usepackage{blindtext}
 \usepackage{microtype}
+\usepackage{xcolor}
 
 \author{Uwe Ziegenhagen}
 \title{Mein erstes \LaTeX-Dokument}
@@ -29,6 +30,9 @@
     citecolor=blue,                     % color of file links
     urlcolor=blue                        % color of external links
 }
+
+\newcommand{\person}[1]{\textsc{\textcolor{green}{#1}}}
+
 \begin{document}
 \maketitle
 
@@ -39,7 +43,7 @@
 \section{Einführung}
 \subsection{Literaturüberblick}
 
-Hallo Fernuni Hagen, ich bin ein Teil der Einführung in \LaTeX.
+Hallo Fernuni Hagen, ich bin ein Teil der Einführung in \LaTeX. \person{Heinrich Hertz}
 Hier kommt der Text rein, den ich gesetzt haben möchte. 
 Die ganzen Blindtext-Befehle werfen wir raus.
 
@@ -65,7 +69,9 @@ Siehe Kapitel \ref{cha:fazit} auf Seite \pageref{cha:fazit}.
 
 {\Huge Hallo Welt, ich bin ein Text.}
 
-Hallo, ich bin ein Text in unterschiedlicher Formatierung, mal bin ich \textbf{fett}, mal \textit{kursiv}, mal \textbf{\textit{fett-kursiv}}, manchmal auch wie aus der \texttt{Schreibmaschine}. \textsc{Albert Einstein} war ein bedeutender Physiker.
+Hallo, ich bin ein Text in unterschiedlicher Formatierung, mal bin ich \textbf{fett}, mal \textit{kursiv}, mal \textbf{\textit{fett-kursiv}}, manchmal auch wie aus der \texttt{Schreibmaschine}. 
+
+\person{Albert Einstein} war ein bedeutender Physiker.
 
 \chapter{Hauptteil}\label{cha:hauptteil}
 
