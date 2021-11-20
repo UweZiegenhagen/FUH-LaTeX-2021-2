@@ -1,9 +1,14 @@
 \documentclass[12pt,ngerman,parskip=full]{scrreprt}
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
 \usepackage{babel}
 \usepackage{blindtext}
 \usepackage{microtype}
 \usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{paralist}
 
 \author{Uwe Ziegenhagen}
 \title{Mein erstes \LaTeX-Dokument}
@@ -43,9 +48,11 @@
 \section{Einführung}
 \subsection{Literaturüberblick}
 
-Hallo Fernuni Hagen, ich bin ein Teil der Einführung in \LaTeX. \person{Heinrich Hertz}
+Hallo Fernuni Hagen, ich bin ein Teil der Einführung in \LaTeX. \person{Heinrich Hertz}\footnote{Die Einheit Hertz wurde nach ihm benannt.}
 Hier kommt der Text rein, den ich gesetzt haben möchte. 
-Die ganzen Blindtext-Befehle werfen wir raus.
+Die ganzen Blindtext-Befehle werfen wir raus. \marginpar{Sharp ist eine japa\-nische Firma}
+
+Schon Leonardo da Vinci sagte: \enquote{Trau nicht allen Informationen, \enquote{Trau nicht allen Informationen, die Du im Internet findest.} die Du im Internet findest.}
 
 Siehe Kapitel \ref{cha:fazit} auf Seite \pageref{cha:fazit}.
 
@@ -71,19 +78,91 @@ Siehe Kapitel \ref{cha:fazit} auf Seite \pageref{cha:fazit}.
 
 Hallo, ich bin ein Text in unterschiedlicher Formatierung, mal bin ich \textbf{fett}, mal \textit{kursiv}, mal \textbf{\textit{fett-kursiv}}, manchmal auch wie aus der \texttt{Schreibmaschine}. 
 
+Uwe \\ Ziegenhagen \\ Köln
+
 \person{Albert Einstein} war ein bedeutender Physiker.
 
 \chapter{Hauptteil}\label{cha:hauptteil}
 
-\blindtext[200]  
+\blindtext[2]  
 
-\blindtext[200]  
+\newpage
 
-\blindtext[200]  
+\begin{itemize}
+	\item \enquote{Hallo Welt}
+	\item Fernuni
+	\item Hagen
+	\item Ich bin
+	
+	\begin{itemize}
+	\item \enquote{Hallo Welt}
+	\item Fernuni
+	\item Hagen
+	\item Ich bin
+	
+	\begin{itemize}
+	\item \enquote{Hallo Welt}
+	\item Fernuni
+	\item Hagen
+	\item Ich bin
+	\item eine 
+	\item Aufzählung
+\end{itemize}
+
+	\item eine 
+	\item Aufzählung
+\end{itemize}
+	
+	
+	\item eine 
+	\item Aufzählung
+\end{itemize}
+
+\begin{compactitem}
+	\item \enquote{Hallo Welt}
+	\item Fernuni
+	\item Hagen
+	\item Ich bin
+	\item eine 
+	\item Aufzählung
+\end{compactitem}
+
+\begin{enumerate}
+	\item Hallo 
+	\item Fernuni
+	\item Hagen
+	\item Ich bin
+	\item eine 
+	\item Aufzählung
+\end{enumerate}
+
+\begin{compactenum}
+	\item Hallo 
+	\item Fernuni
+	\item Hagen
+	\item Ich bin
+	\item eine 
+	\item Aufzählung
+\end{compactenum}
+
+\begin{description}
+\item[Apfel] Leckeres Obst
+\item[Birne] Auch leckeres Obst
+\item[Karotte] Leckeres Gemüse
+\end{description}
+
+\begin{compactdesc}
+\item[Apfel] Leckeres Obst
+\item[Birne] Auch leckeres Obst
+\item[Karotte] Leckeres Gemüse
+\end{compactdesc}
+
 
 \chapter{Fazit}\label{cha:fazit}
 
 \section{HalloWelt}\label{sec:hallo}
+
+ßäüöÄÖÜ
 
 \blindtext[2]  
 
