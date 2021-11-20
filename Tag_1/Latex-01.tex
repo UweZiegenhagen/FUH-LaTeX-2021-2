@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{csquotes}
 \usepackage{paralist}
+\usepackage{graphicx}
 
 \author{Uwe Ziegenhagen}
 \title{Mein erstes \LaTeX-Dokument}
@@ -42,6 +43,8 @@
 \maketitle
 
 \tableofcontents
+
+\listoffigures
 
 \chapter{Wasser}
 
@@ -181,12 +184,14 @@ fuihds udsh ihsdiuh uihsiduh iusfdhui sduih
 
 \section{HalloWelt}\label{sec:hallo}
 
-ßäüöÄÖÜ
-
 \blindtext[2]  
 
-\blindtext[2]  
+\includegraphics[width=5cm]{Bilder/Katze2}
 
-\blindtext[2]  
+\begin{center}
+{\includegraphics[width=0.8\textwidth]{Bilder/Katze2}\captionof{figure}{Meine Miezekatze}}
+\end{center}
+
+
 
 \end{document}
