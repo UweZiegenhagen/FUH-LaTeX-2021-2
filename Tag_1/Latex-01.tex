@@ -1,4 +1,4 @@
-\documentclass[12pt,ngerman,parskip=full]{scrbook}
+\documentclass[12pt,ngerman,parskip=full]{scrreprt}
 
 \usepackage{babel}
 \usepackage{blindtext}
@@ -8,6 +8,27 @@
 \title{Mein erstes \LaTeX-Dokument}
 \date{Köln, den 19.11.2021}
 
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={My title},                        % title
+    pdfauthor={Author},                 % author
+    pdfsubject={Subject},                   % subject of the document
+    pdfcreator={Creator},                   % creator of the document
+    pdfproducer={Producer},             % producer of the document
+    pdfkeywords={keyword1, key2, key3},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
+}
 \begin{document}
 \maketitle
 
@@ -20,19 +41,19 @@
 
 Hallo Fernuni Hagen, ich bin ein Teil der Einführung in \LaTeX. Hier kommt der Text rein, den ich gesetzt haben möchte. Die ganzen Blindtext-Befehle werfen wir raus.
 
+Siehe Kapitel \ref{cha:fazit} auf Seite \pageref{cha:fazit}.
 
+\chapter{Hauptteil}\label{cha:hauptteil}
 
-\chapter{Hauptteil}
+\blindtext[200]  
 
-\blindtext[2]  
+\blindtext[200]  
 
-\blindtext[2]  
+\blindtext[200]  
 
-\blindtext[2]  
+\chapter{Fazit}\label{cha:fazit}
 
-\chapter{Fazit}
-
-\section{sdfnduhfi}
+\section{HalloWelt}\label{sec:hallo}
 
 \blindtext[2]  
 
