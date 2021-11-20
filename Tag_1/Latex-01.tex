@@ -39,7 +39,7 @@
     urlcolor=blue                        % color of external links
 }
 
-\newcommand{\person}[1]{\textsc{\textcolor{green}{#1}}}
+\newcommand{\person}[1]{\textsc{\textcolor{teal}{#1}}}
 
 \begin{document}
 \maketitle
@@ -55,7 +55,7 @@
 
 Hallo Fernuni Hagen, ich bin ein Teil der Einführung in \LaTeX. \person{Heinrich Hertz}\footnote{Die Einheit Hertz wurde nach ihm benannt.}
 Hier kommt der Text rein, den ich gesetzt haben möchte. 
-Die ganzen Blindtext-Befehle werfen wir raus. \marginpar{Sharp ist eine japa\-nische Firma}
+Die ganzen Blindtext-Befehle werfen wir raus. \marginpar{Sharp ist eine japa\-nische Firma} Siehe Abbildung \ref{fig:katzi} auf Seite \pageref{fig:katzi}.
 
 Schon Leonardo da Vinci sagte: \enquote{Trau nicht allen Informationen, \enquote{Trau nicht allen Informationen, die Du im Internet findest.} die Du im Internet findest.}
 
@@ -191,9 +191,30 @@ fuihds udsh ihsdiuh uihsiduh iusfdhui sduih
 \includegraphics[width=5cm]{Bilder/Katze2}
 
 \begin{center}
-{\includegraphics[width=0.8\textwidth]{Bilder/Katze2}\captionof{figure}{Meine Miezekatze}}
+\includegraphics[width=0.8\textwidth]{Bilder/Katze2}\captionof{figure}{Meine Miezekatze}\label{fig:katzi}
 \end{center}
 
+\blindtext[2]  
 
+\blindtext[2]  
 
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Bilder/Katze2}\caption{Meine Miezekatze}\label{fig:katzi2}
+\end{center}
+\end{figure}
+
+\blindtext[2]  
+
+\blindtext[2]  
+
+\blindtext[2]  
+
+\blindtext[2]  
+
+\blindtext[2]  
+
+\blindtext[2]  
+
+\blindtext[2]  
 \end{document}
