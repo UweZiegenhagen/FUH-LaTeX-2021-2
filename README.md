@@ -11,8 +11,12 @@ git installieren und dann auf der Kommandozeile
 
 git clone https://github.com/UweZiegenhagen/FUH-LaTeX-2021-1.git
 
-Updates holt man mit git pull (aus dem Verzeichnis heraus)
+Updates holt man mit 
 
+git fetch --all
+git reset --hard origin/master
+
+Dies überschreibt alle lokalen Änderungen an meinen Dateien, Anpassungen daher in eigenen Dateien machen!
 
 ## Der Kurs
 
