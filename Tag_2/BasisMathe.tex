@@ -1,9 +1,9 @@
 \documentclass[12pt,ngerman,parskip=half]{scrartcl}
 \usepackage{babel}
 \usepackage{blindtext}
-\usepackage{amsmath}
+\usepackage{amsmath, amsfonts}
 \usepackage{microtype}
-
+\usepackage{esvect}
 
 \makeatletter % Mach das @ zu einem normal Zeichen
 \newcommand{\avg}{\mathop{\operator@font avg}}
@@ -124,8 +124,84 @@ a &= c \cdot x &= x\times y \leq 567 \\
 a &= c \cdot \tanh z + \alpha\omega &= \sum_{i=1}^{1000} t
 \end{alignat}
 
+%Matrix Umgebung aus AMS math
+
+\[% Version ohne Klammern
+\begin{matrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{matrix}
+\]
+
+\[% mit runden Klammern
+\begin{pmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{pmatrix}
+\]
+
+\[% mit eckigen Klammern
+\begin{bmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{bmatrix}
+\]
+
+\[% mit geschweiften Klammern
+\begin{Bmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{Bmatrix}
+\]
+
+\[% mit senkrechten Strichen 
+\begin{vmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{vmatrix}
+\]
+
+\[% mit doppelten senkrechten Strichen 
+\det 
+\begin{Vmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{Vmatrix}
+\text{ist eine Matrix}
+\]
+
+\( \int_{i=1}^{\infty} \sin x \)
+
+%Standard-Vektorpfeil skaliert nicht mit
+\( \vec{a} \times \vec{def} \)
+
+%esvect Paket laden für \vv-Befehl
+\( \vv{a} \times \vv{def} \bigtriangleup \Omega  \)
+
+%Abstände
 
 
+\( ab \) % kein Abstand
+
+\(a\,b \)
+
+\(a\;b\)
+
+\(a\quad b\)
+
+\(a\qquad b\)
+
+\(a \cup b \cap c\)
+
+\[ a \in N \forall  \]
+
+\(  \mathbb{N} \)
 
 \end{document}
 
