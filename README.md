@@ -63,12 +63,15 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 
 ### Tag 2 - Mathematik
 
-*
-*
-*
+* Wiederholung und Fragen zum letzten Mal
+* Tabellen
+* Standard-Mathematik und AMSmath
+* Mehr zu Referenzen: prettyref und varioref
+* Folien mit Beamer
 
 ### Tag 3 - Bibliografien
 
+* Wiederholung und Fragen zum letzten Mal
 *
 *
 *
@@ -76,9 +79,9 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 
 ### Tag 4 - Q&A, Folien, Briefe und Lebensläufe
 
-
-*
-*
+* Wiederholung und Fragen zum letzten Mal
+* Frage und Antwort
+* TikZ
 *
 
 
