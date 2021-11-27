@@ -1,0 +1,44 @@
+\documentclass[12pt,ngerman,parskip=half]{scrreprt}
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{microtype}
+
+\author{Uwe Ziegenhagen}
+\title{Mein zweites \LaTeX-Dokument}
+\date{Köln, den \today}
+
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={My title},                        % title
+    pdfauthor={Author},                 % author
+    pdfsubject={Subject},                   % subject of the document
+    pdfcreator={Creator},                   % creator of the document
+    pdfproducer={Producer},             % producer of the document
+    pdfkeywords={keyword1, key2, key3},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
+}
+
+\begin{document}
+
+Hallo, ich $a^2+b^2=c^2$ bin eine Formel im Fließtext, in \TeX-Notation.
+
+Hallo, ich \(a^2+b^2=c^2\) bin eine Formel im Fließtext, in \LaTeX-Notation.
+
+Hallo, ich $$a^2+b^2=c^2$$ bin eine abgesetzte Formel, in \TeX-Notation, und sollte nicht mehr genutzt werden.
+
+Hallo, ich \[a^2+b^2=c^2\] bin eine abgesetzte Formel, in \LaTeX-Notation, und sollte immer genutzt werden.
+
+
+\end{document}
+
