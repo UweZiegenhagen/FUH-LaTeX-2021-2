@@ -1,4 +1,4 @@
-\documentclass[12pt,ngerman,parskip=half]{scrreprt}
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
 \usepackage{babel}
 \usepackage{blindtext}
 \usepackage{microtype}
@@ -39,6 +39,13 @@ Hallo, ich $$a^2+b^2=c^2$$ bin eine abgesetzte Formel, in \TeX-Notation, und sol
 
 Hallo, ich \[a^2+b^2=c^2\] bin eine abgesetzte Formel, in \LaTeX-Notation, und sollte immer genutzt werden.
 
+\begin{equation}\label{eq:gl1}% \right. wenn keine schließende große Klammer gesetzt werden soll
+-\frac{p}{2} \pm \sqrt{
+\left(\frac{p}{2}\right)
+^2 - q}
+\end{equation}
+
+Siehe Gleichung \ref{eq:gl1} auf Seite \pageref{eq:gl1}.
 
 \end{document}
 
