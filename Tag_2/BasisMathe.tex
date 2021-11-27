@@ -3,6 +3,10 @@
 \usepackage{blindtext}
 \usepackage{microtype}
 
+\makeatletter % Mach das @ zu einem normal Zeichen
+\newcommand{\avg}{\mathop{\operator@font avg}}
+\makeatother
+
 \author{Uwe Ziegenhagen}
 \title{Mein zweites \LaTeX-Dokument}
 \date{Köln, den \today}
@@ -65,7 +69,7 @@ a \cdot b \times c = d \cdots \ddots \ldots \dots \vdots
 \end{equation}
 
 \begin{equation}
-\sin x \cdot \cos x = \tanh y avg
+\sin x \cdot \cos x = \tanh y \avg
 \end{equation}
 
 
