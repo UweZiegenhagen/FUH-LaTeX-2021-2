@@ -1,4 +1,4 @@
-\documentclass[ngerman]{scrreprt}
+\documentclass[12pt,ngerman,parskip=half]{scrreprt}
 \usepackage{babel}
 \usepackage{blindtext}
 \usepackage{microtype}
@@ -88,6 +88,47 @@ Siehe Tabelle \ref{tab:erstetab} auf Seite \pageref{tab:erstetab}.
 \captionof{figure}{Miezekatze auf dem Handtuch}
 \end{center}
 
+\chapter[Automatische Positionierung]{Automatische Positionierung mit \LaTeX-Gleitobjekten, eine komplizierte Angelegenheit}
+
+\blindtext 
+
+\blindtext 
+
+\blindtext 
+
+% table und figure als Standard-Gleitobjekte
+\begin{table}
+\caption{Hallo, ich bin die Tabelle}\label{tab:erstetab}
+\begin{tabular}{|l|c|r|p{8cm}|} \hline
+sp1z1 & sp2z1 & sp3z1 & sp4z1 \\ \hline
+345324532etr  & 235342323434 & 534 & Hallo  \\ \hline
+\end{tabular}
+\end{table}
+
+\blindtext 
+
+\blindtext 
+
+Siehe Abbildung \ref{fig:melli} auf Seite \pageref{fig:melli}
+
+\blindtext 
+
+\begin{figure}[bth] % \usepackage{here} für Typ "H"
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Bilder/Katze1}
+\caption{Ich bin die \%-Melli}\label{fig:melli}
+\end{center}
+\end{figure}
+
+
+
+\blindtext 
+
+\blindtext 
+
+\blindtext 
+
+\blindtext 
 
 \end{document}
 
