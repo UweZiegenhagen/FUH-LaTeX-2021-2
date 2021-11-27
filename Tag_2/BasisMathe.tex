@@ -1,7 +1,9 @@
 \documentclass[12pt,ngerman,parskip=half]{scrartcl}
 \usepackage{babel}
 \usepackage{blindtext}
+\usepackage{amsmath}
 \usepackage{microtype}
+
 
 \makeatletter % Mach das @ zu einem normal Zeichen
 \newcommand{\avg}{\mathop{\operator@font avg}}
@@ -71,6 +73,58 @@ a \cdot b \times c = d \cdots \ddots \ldots \dots \vdots
 \begin{equation}
 \sin x \cdot \cos x = \tanh y \avg
 \end{equation}
+
+\begin{eqnarray}
+y &=& d \\
+y &=& c_x +d \\
+\sin x &=& \cos x \times y + \alpha - \beta
+\end{eqnarray}
+
+%besser Version aus amsmath nutzen
+\begin{eqnarray*}
+y &=& d \\
+y &=& c_x +d \\
+\sin x &=& \cos x \times y + \alpha - \beta
+\end{eqnarray*}
+
+%besser Version aus amsmath nutzen
+\[
+\begin{array}{lcr}
+y &=& d \\
+y &=& c_x +d \\
+\sin x &=& \cos x \times y + \alpha - \beta
+\end{array}
+\]
+
+
+\[
+\bordermatrix{
+   & 1 & 2 & 3 \cr
+1 & 4 & 2 & 156 \cr
+2 & 5 & 33 & 56 \cr
+3 & 6 & 2 & 88 \cr
+}
+\]
+
+\section{Beispiele aus dem amsmath-Paket}
+%\usepackage{amsmath}
+
+\begin{align}
+a &= c \cdot x \\
+a &= c \cdot \tanh z + \sum_{i=1}^{1000} t
+\end{align}
+
+\begin{align*}
+a &= c \cdot x \\
+a &= c \cdot \tanh z + \sum_{i=1}^{1000} t
+\end{align*}
+
+\begin{alignat}{3}
+a &= c \cdot x &= x\times y \leq 567 \\
+a &= c \cdot \tanh z + \alpha\omega &= \sum_{i=1}^{1000} t
+\end{alignat}
+
+
 
 
 \end{document}
