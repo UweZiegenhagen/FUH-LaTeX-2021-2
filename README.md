@@ -36,7 +36,9 @@ Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 15:00 Uhr.
 ## Was wird benötigt
 
 
-* Ein Rechner (Laptop, Desktop) mit Windows oder MacOS (Linux geht auch, wenn die Kommunikationssoftware dafür verfügbar ist)
+* Ein Rechner (Laptop, Desktop) mit Windows oder MacOS oder Linux
+
+* Chrome oder Chromium als Webbrowser, Firefox hat sich bei BBB als problematisch erwiesen
 
 * TeX Live 2021, herunterladen und installieren von tug.org/texlive. Wenn ihr unter Linux arbeitet: Bitte nicht aus den Distributionsquellen nehmen, sondern auch von tug.org installieren. Das TeX Live in den Distributionen ist oft nicht aktuell. Mac-User installieren bitte MacTeX (auch auf der tug.org Seite frei verfügbar)
 
@@ -72,8 +74,8 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 ### Tag 3 - Bibliografien
 
 * Wiederholung und Fragen zum letzten Mal
-*
-*
+* Einfache Bibliografien
+* Bibliografien mit bibLaTeX
 *
 
 
