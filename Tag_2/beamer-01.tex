@@ -1,8 +1,11 @@
-\documentclass[ngerman]{beamer}
+\documentclass[ngerman,14pt]{beamer}
+% Option "handout" ist hilfreich für ebendiese
 \usepackage{babel}
 
 %\usetheme{Dresden}
 \usetheme{PaloAlto}
+% http://www2.informatik.uni-freiburg.de/~frank/latex-kurs/latex-kurs-3/farben/Extra-Farben.pdf
+\usecolortheme[named=blue]{structure}
 
 \author{Uwe Ziegenhagen}
 \title{Meine erste Präsentation}
@@ -88,6 +91,55 @@
 \item d
 \item<5> e
 \item f
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mehrspaltig}
+
+\begin{columns}
+\begin{column}{0.48\textwidth}
+\begin{itemize}
+	\item a
+	\item b
+	\item c
+	\item d
+	\item e
+	\item f
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{enumerate}
+	\item a
+	\item b
+	\item c
+	\item d
+	\item e
+	\item f
+\end{enumerate}
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Title}
+  This is an \alert<+(1)>{example} sentence.
+\end{frame}
+
+\setbeamerfont{alerted text}{series=\bfseries}
+
+\begin{frame}
+\frametitle{Inhaltsverzeichnis}
+
+\begin{itemize}
+\item \alert<1>{example}
+\item \alert<2>{example}
+\item \alert<3>{example}
+\item \alert<4>{example}
+\item \alert<5>{example}
+\item \alert<6>{example}
 \end{itemize}
 \end{frame}
 
