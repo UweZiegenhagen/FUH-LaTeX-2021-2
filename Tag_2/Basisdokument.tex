@@ -2,6 +2,8 @@
 \usepackage{babel}
 \usepackage{blindtext}
 \usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
 
 \author{Uwe Ziegenhagen}
 \title{Mein zweites \LaTeX-Dokument}
@@ -34,6 +36,10 @@
 
 \tableofcontents
 
+\listoftables
+
+\listoffigures
+
 \chapter{Einleitung}
 \section{Einführung}
 \subsection{Literatur}
@@ -41,10 +47,46 @@
 
 \blindtext
 
-\begin{tabular}{lcrp{8cm}}
-sp1z1 & sp2z1 & sp3z1 & sp4z1 \\
-345324532 & 23534234 & 43534 & \blindtext \\
+\captionof{table}{Hallo, ich bin die Tabelle}\label{tab:erstetab}
+\begin{tabular}{|l|c|r|p{8cm}|} \hline
+sp1z1 & sp2z1 & sp3z1 & sp4z1 \\ \hline
+345324532etr  & 235342323434 & 534 & Hallo  \\ \hline
 \end{tabular}
+
+
+\begin{center}
+\captionof{table}{Hallo, ich bin die booktabsTabelle}\label{tab:erstebooktab}
+\begin{tabular}{lcrp{4cm}} \toprule[2.5pt]
+\textbf{sp1z1} & \textbf{sp2z1} & \textbf{sp3z1} & \textbf{sp4z1} \\ \addlinespace \cmidrule(rl){1-3}
+345324532etr  & 235342323434 & 534 & Hallo  \\ 
+345324532etr  & 235342323434 & 534 & Hallo  \\ 
+345324532etr  & 235342323434 & 534 & Hallo  \\ 
+345324532etr  & 235342323434 & 534 & Hallo  \\ \bottomrule[5pt]
+\end{tabular}
+\end{center}
+
+
+\clearpage
+
+\begin{center}
+\captionof{table}{Hallo, ich bin die Tabelle}
+\label{tab:ertsebooktab}
+\begin{tabular}{lcrp{2cm}}\toprule
+\textbf{sp1z1} & \textbf{sp2z1} & \textbf{sp3z1} & \textbf{sp4Z1} \\ \midrule
+34524532 & 23534234 & 43534 & Hallo\\
+34524532 & 23534234 & 43534 & Hallo\\
+34524532 & 23534234 & 43534 & Hallo\\
+34524532 & 23534234 & 43534 & Hallo\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Siehe Tabelle \ref{tab:erstetab} auf Seite \pageref{tab:erstetab}.
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Bilder/Katze1}
+\captionof{figure}{Miezekatze auf dem Handtuch}
+\end{center}
 
 
 \end{document}
