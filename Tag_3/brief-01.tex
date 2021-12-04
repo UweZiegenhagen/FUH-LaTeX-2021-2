@@ -1,13 +1,32 @@
 \documentclass[ngerman,12pt]{scrlttr2}
 
+\setkomavar{fromname}{Donald Duck}
+\setkomavar{fromaddress}{Arme-Schlucker-Weg 1, 45898 Entendorf}
+
+\setkomavar{myref}[IBAN]{DE98160500023}
+\setkomavar{yourref}{DD/DD/Rauswurf}
+\setkomavar{yourmail}[Ihre Postkarte vom]{01.12.2021}
+\setkomavar{subject}{Rauswurf}
+
+\setkomavar{firstfoot}{%
+\begin{tabular}{p{0.33\textwidth}p{0.33\textwidth}p{0.33\textwidth}}
+E-Mail: duck@duck.com & Fax: 02134-879546 & Skype:DDuck
+\end{tabular}
+}
+
 \usepackage{babel}
 
+\date{Köln, den \today}
+
 \begin{document}
+\begin{letter}{Dagobert Duck \\ Am Geldspeicher 1 \\ 12345 Entenhausen}
 
-\begin{letter}
+\opening{Lieber Onkel Dagobert,}
 
-s
+vielen Dank für Deinen Brief vom \usekomavar{yourmail}. Ich finde es traurig, dass Du Deine Großneffen und mich rauswerfen lässt, nur weil wir keine Miete mehr bezahlen.
+
+\closing{Mit freundlichen Grüßen,}
+\encl{Vollgeweintes Taschentuch \\ Gehaltsnachweis}
 
 \end{letter}
-
 \end{document}
