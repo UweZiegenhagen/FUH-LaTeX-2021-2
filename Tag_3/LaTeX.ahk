@@ -1,6 +1,3 @@
-:*:dlr#::Deutsches Zentrum für Luft- und Raumfahrt
-
-
 :*:ch#::\chapter{{}{}}{LEFT}
 :*:s#::\section{{}{}}{LEFT}
 :*:ss#::\subsection{{}{}}{LEFT}
