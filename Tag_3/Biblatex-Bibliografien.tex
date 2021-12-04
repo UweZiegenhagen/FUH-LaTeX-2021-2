@@ -1,0 +1,18 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrarticle}
+
+\usepackage{csquotes}
+\usepackage{blindtext}
+
+\usepackage[style=authortitle-icomp,backend=biber]{biblatex}
+
+\addbibresource{MeineLiteratur.bib}
+
+\begin{document}
+
+\blindtext
+
+\blindtext
+
+\end{document}
