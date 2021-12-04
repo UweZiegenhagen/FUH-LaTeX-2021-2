@@ -2,7 +2,7 @@
 % arara: pdflatex: {shell: yes}
 % arara: biber
 % arara: pdflatex: {shell: yes}
-\documentclass[12pt,ngerman]{scrarticle}
+\documentclass[12pt,ngerman,parskip=half]{scrarticle}
 
 \usepackage{babel}
 \usepackage{csquotes}
@@ -42,7 +42,10 @@
 
 \cite{knuth} und \cite{Voss2017} zeigen in ihren \LaTeX-Büchern, wie man mit dem \TeX-System arbeiten kann. Insbesondere \citeauthor{Voss2017} zeigte in seinem im Jahre \citeyear{Voss2017} erschienenen Buch \citetitle{Voss2017}, wie cool \LaTeX\ so ist.
 
-\blindtext \cite{Voss2017} und \cite{knuth}
+\blindtext \cite{Voss2017} und \cite{knuth} sind wichtige Werke. Man sieht an \cite{Aybas2021} auch, wie wichtig Physik ist.
+
+\parencite{knuth} und Mittelbach\footcite{knuth} schreiben gern Literatur.
+
 
 
 %\nocite{*} Für die Ausgabe aller Einträge im Literaturverzeichnis, nicht in der Abschlussphase der Arbeit benutzen
