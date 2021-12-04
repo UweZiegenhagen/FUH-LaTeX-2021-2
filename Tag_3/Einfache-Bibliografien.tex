@@ -1,18 +1,23 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
-\documentclass[12pt,ngerman]{scrartcl}
+\documentclass[12pt,ngerman]{scrarticle}
 
 \usepackage{babel}
 \usepackage{blindtext}
 
 \begin{document}
 
-\blindtext
+\blindtext Wie Knuth \cite{knuth} es in seinem Werk beschrieben hat, so ist es.
 
 \blindtext
 
 \blindtext
 
-
+% ungefähre Zahl der Einträge, wichtig für die interne Formatierung
+\begin{thebibliography}{15} 
+\bibitem{knuth} Donald E. Knuth, \textit{The \TeX Book},
+Addison-Wesley, Massachusetts, 2nd edition, 1984.
+\bibitem{duck} Dagobert Duck, \textit{Mein Leben \& mein Reichtum}, Duck-Verlag, Entenhausen, 123nd edition, 1953
+\end{thebibliography}
 
 \end{document}
