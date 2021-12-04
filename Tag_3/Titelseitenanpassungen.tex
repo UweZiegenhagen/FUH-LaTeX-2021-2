@@ -1,16 +1,36 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
 % arara: pdflatex: {shell: yes}
-\documentclass[12pt,ngerman]{scrreport}
+\documentclass[12pt,ngerman,parskip=half]{scrreport}
 
 \usepackage{babel}
 \usepackage{blindtext}
-
+\usepackage[left=2cm,right=1cm,top=2cm,bottom=4cm]{geometry}
 
 \begin{document}
 
 \begin{titlepage}
-Fernuniversität Hagen
+{\Huge\bfseries Fernuniversität Hagen \\ Fakultät für Mathematik \\ und Informatik }
+
+\rule{\textwidth}{1pt}
+
+\vspace*{4cm}
+\begin{center}
+{\LARGE\bfseries Entenhausen im zeitlichen Abriss}
+\end{center}
+
+\vspace*{3cm}
+\begin{center}
+\rule{5cm}{5cm}
+\end{center}
+
+
+\vfill
+{\Large
+\begin{tabular}{l}
+Donald Duck \\
+Matrikelnummer 12324654 \\
+\end{tabular}}
 
 \end{titlepage}
 
