@@ -12,13 +12,40 @@
 
 \addbibresource{MeineLiteratur.bib}
 
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={My title},                        % title
+    pdfauthor={Author},                 % author
+    pdfsubject={Subject},                   % subject of the document
+    pdfcreator={Creator},                   % creator of the document
+    pdfproducer={Producer},             % producer of the document
+    pdfkeywords={keyword1, key2, key3},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
+}
+
+
 \begin{document}
 
-\blindtext
+\blindtext 
 
-\blindtext
 
-\nocite{*}
+\cite{knuth} und \cite{Voss2017} zeigen in ihren \LaTeX-Büchern, wie man mit dem \TeX-System arbeiten kann. Insbesondere \citeauthor{Voss2017} zeigte in seinem im Jahre \citeyear{Voss2017} erschienenen Buch \citetitle{Voss2017}, wie cool \LaTeX\ so ist.
+
+\blindtext \cite{Voss2017} und \cite{knuth}
+
+
+%\nocite{*} Für die Ausgabe aller Einträge im Literaturverzeichnis, nicht in der Abschlussphase der Arbeit benutzen
 \printbibliography
 
 \end{document}
