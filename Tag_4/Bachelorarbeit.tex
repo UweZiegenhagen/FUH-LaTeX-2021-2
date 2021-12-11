@@ -51,9 +51,19 @@
 
 \blindtext \cite{Voss2017} und \cite{knuth} sind wichtige Werke. Man sieht an \cite{Aybas2021} auch, wie wichtig Physik ist.
 
+\cite{hist} 
 
 \include{Kapitel-02}
 
-\printbibliography
+%\printbibliography % für alle zitierten Werke in einer Bibliografie
+
+% nur die Artikel
+\printbibliography[title={Wiss. Artikel},type=article]
+
+% nur die Bücher
+\printbibliography[title={Bücher},type=book]
+
+% nur online
+\printbibliography[title={Internet},type=online]
 
 \end{document}
