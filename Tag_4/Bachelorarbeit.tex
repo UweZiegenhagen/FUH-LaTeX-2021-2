@@ -1,9 +1,12 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
-\documentclass[12pt,ngerman,parskip=half]{scrbook}
+\documentclass[12pt,ngerman,parskip=half,DIV=12]{scrbook}
 
 \usepackage{babel}
 \usepackage{blindtext}
+
+% wenn die Ränder fest vorgegeben sind, geometry benutzen, schöner ist die Nutzung von DIV und BCOR
+%\usepackage[left=2cm,right=4cm,top=2cm,bottom=4cm]{geometry}
 
 \author{Uwe Ziegenhagen}
 \title{Meine Bachelor-Arbeit}

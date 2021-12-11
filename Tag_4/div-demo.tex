@@ -1,0 +1,47 @@
+
+\documentclass[paper=a4,pagesize,twoside,DIV=10,BCOR=1cm]{scrartcl}
+\usepackage{eso-pic,xcolor,blindtext}
+
+\makeatletter
+\newlength\StartX
+\newlength\DeltaX
+\newlength\DeltaY
+\newlength\NettoPaperWidth
+\NettoPaperWidth=\dimexpr\paperwidth-\ta@bcor
+\AddToShipoutPictureBG{%
+  \linethickness{.5mm}\color{blue!50}%
+  \StartX=\ta@bcor
+  \DeltaX=\dimexpr\NettoPaperWidth / \ta@div 
+  \DeltaY=\dimexpr-\paperheight / \ta@div 
+  \if@twoside
+    \ifodd\c@page\else
+      \StartX=\NettoPaperWidth
+      \DeltaX=-\DeltaX
+    \fi
+  \fi
+  \AtPageUpperLeft{%
+    \multiput(\StartX,0)(\DeltaX,0){\ta@div}{\line(0,-1){\paperheight}}%
+    \multiput(0,0)(0,\DeltaY){\ta@div}{\line(1,0){\paperwidth}}%
+  }
+}
+\makeatother
+
+\setlength\parindent{0pt}
+
+\begin{document} \Huge\bfseries\sffamily\centering
+
+M \hfill M
+\vfill
+KOMA-Scripts \\ Layout-Konstruktion \\[2ex]
+DIV=\expandafter\the\csname ta@div\endcsname \\
+BCOR=\expandafter\the\csname ta@bcor\endcsname
+\vfill
+M \hfill M
+
+\newpage
+
+M \hfill M
+\vfill
+M \hfill M
+
+\end{document}
