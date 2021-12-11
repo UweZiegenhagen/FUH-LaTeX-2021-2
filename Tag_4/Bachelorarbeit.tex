@@ -1,17 +1,14 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
+% arara: pdflatex: {shell: yes}
 \documentclass[12pt,ngerman,parskip=half,DIV=12]{scrbook}
 
-\usepackage{babel}
-\usepackage{blindtext}
-\usepackage{palatino}
-
+\input{preambel}
 
 \usepackage[headsepline=0.5pt,footsepline=0.5pt]{scrlayer-scrpage}
 \KOMAoptions{headwidth=1\textwidth,footwidth=1\textwidth}
 
 \pagestyle{scrheadings}
-\clearscrheadings 
 
 \clearscrheadings 
 \ohead[\headmark]{\headmark}
@@ -40,32 +37,8 @@
 
 \listoftables
 
-\chapter{Einleitung}
+\include{Kapitel-01}
 
-\section{Literaturüberblick}
-
-\blindtext[5]
-
-\blindtext[5]
-
-\blindtext[5]
-
-\blindtext[5]
-
-\blindtext[5]
-
-\chapter{Hauptteil}
-
-\section{Literatur im Okzident}
-
-\blindtext[5]
-
-\blindtext[5]
-
-\blindtext[5]
-
-\blindtext[5]
-
-\blindtext[5]
+\include{Kapitel-02}
 
 \end{document}
