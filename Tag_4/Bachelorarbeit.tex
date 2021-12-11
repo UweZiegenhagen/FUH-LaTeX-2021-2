@@ -1,11 +1,16 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
+% arara: biber
 % arara: pdflatex: {shell: yes}
 
 %Standard bei scrbook ist "twoside", für Abschlussarbeiten besser auf "oneside" umstellen.
 \documentclass[12pt,ngerman,oneside,parskip=half,DIV=12]{scrbook}
 
 \input{preambel}
+
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+
+\addbibresource{MeineLiteratur.bib}
 
 \usepackage[headsepline=0.5pt,footsepline=0.5pt]{scrlayer-scrpage}
 \KOMAoptions{headwidth=1\textwidth,footwidth=1\textwidth}
@@ -42,6 +47,13 @@
 
 \include{Kapitel-01}
 
+\cite{knuth} und \cite{Voss2017} zeigen in ihren \LaTeX-Büchern, wie man mit dem \TeX-System arbeiten kann. Insbesondere \citeauthor{Voss2017} zeigte in seinem im Jahre \citeyear{Voss2017} erschienenen Buch \citetitle{Voss2017}, wie cool \LaTeX\ so ist.
+
+\blindtext \cite{Voss2017} und \cite{knuth} sind wichtige Werke. Man sieht an \cite{Aybas2021} auch, wie wichtig Physik ist.
+
+
 \include{Kapitel-02}
+
+\printbibliography
 
 \end{document}
