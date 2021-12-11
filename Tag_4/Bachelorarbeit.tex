@@ -1,7 +1,9 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
 % arara: pdflatex: {shell: yes}
-\documentclass[12pt,ngerman,parskip=half,DIV=12]{scrbook}
+
+%Standard bei scrbook ist "twoside", für Abschlussarbeiten besser auf "oneside" umstellen.
+\documentclass[12pt,ngerman,oneside,parskip=half,DIV=12]{scrbook}
 
 \input{preambel}
 
@@ -11,14 +13,15 @@
 \pagestyle{scrheadings}
 
 \clearscrheadings 
-\ohead[\headmark]{\headmark}
+\ohead[]{\headmark}
 \ofoot[\pagemark]{\pagemark}
 \ihead[]{}
 \ifoot[]{}
 \chead[]{}
 \cfoot[]{}
 
-
+% Wenn nur ein oder mehrere Kapitel neu übersetzt werden sollen; behält die korrekte Seitenzahl
+%\includeonly{Kapitel-02}
 
 
 % wenn die Ränder fest vorgegeben sind, geometry benutzen, schöner ist die Nutzung von DIV und BCOR
