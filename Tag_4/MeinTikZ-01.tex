@@ -17,11 +17,56 @@
 \blindtext[2]
 
 \begin{tikzpicture}
-\draw (0,0) grid (16,8);
-\draw (0,0) -- (2,3);
+\draw[red,thick] (0,0) grid (16,8);
+\draw[blue, very thick] (0,0) -- (2,3);
 \draw (5,5) -- (1,7);
 \end{tikzpicture}
 
+\blindtext
+
+
+\begin{tikzpicture}[scale=1,
+punkt/.style={circle, minimum size = 1cm,blue,fill=yellow},
+]
+
+\draw[red,thick] (0,0) grid (16,8);
+\draw (0,0) -- (5,5);
+\draw (0,0) .. controls (1,8) and (7,1) .. (5,5);
+
+\fill[red!25!white] (12,4) rectangle (14,6);
+
+\draw[red,thick,dashed] (14,2) circle (0.75cm);
+
+\draw[blue,dotted,thin] (10,5) circle (0.75cm);
+
+\node[punkt] (A) at (9,1){A};
+\node[draw] (B) at (8,4){B};
+\draw (A) -- (B);
+\end{tikzpicture}
+
+\blindtext[1]
+
+\begin{tikzpicture}[scale=1,
+punkt/.style={circle, minimum size = 1cm,blue,fill=yellow},
+]
+
+\draw[red,thick] (0,0) grid (16,8); % Grid
+
+\node[punkt] (A) at (2,7){Aa};
+\node[punkt] (B) at (4,6){Be};
+\node[punkt] (C) at (6,2){Ce};
+\node[punkt] (D) at (8,4){De};
+\node[punkt] (e) at (10,3){Ee};
+
+\draw (A) -- (C);
+
+%Bezier-Kurve
+\draw (1,1) .. controls (3,8) and (8,1) .. (12,6);
+\draw (1,1) .. controls (3,8) and (8,2) .. (12,6);
+\draw (1,1) .. controls (3,8) and (8,3) .. (12,6);
+\draw (1,1) .. controls (3,8) and (8,4) .. (12,6);
+\draw (1,1) .. controls (3,8) and (8,5) .. (12,6);
+\end{tikzpicture}
 
 
 \end{document}
@@ -56,6 +101,4 @@ punkt/.style={circle, minimum size = 1cm,blue,fill=yellow},
 \node[punkt] (A) at (9,1){A};
 \node[draw] (B) at (8,4){B};
 \draw (A) -- (B);
-
-
 \end{tikzpicture}
