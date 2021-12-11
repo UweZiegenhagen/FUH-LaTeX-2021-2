@@ -1,0 +1,23 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman,parskip=full]{scrartcl}
+
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{listings}
+
+\begin{document}
+
+\blindtext
+
+% 1. Teil vom Listings Paket: Umgebung
+\begin{lstlisting}[language={Python}]
+def halloWelt():
+    print('Hallo Welt')
+\end{lstlisting}
+
+% 2. Teil vom Listings Paket: Fließtext
+
+Hallo, so sieht ein Python \lstinline[language={Python}]{print('Hallo Welt')} Befehl im Fließtext aus.
+
+\end{document}
